@@ -1,0 +1,49 @@
+body {
+font-family: 'Titllitum Web', serif;
+font-family: 'Crimson Text', sans-serif;
+font-size: 18px;
+}
+
+header{
+background-color: #013a3a;
+text-align: center;
+padding: .5em;
+color: #deeaf4;
+}
+
+header > img {
+width: 150px;
+height: auto;
+vertical-align: middle;
+}
+
+.headertext {
+display:inline-block;
+vertical-align:middle;
+}
+
+.headertext h1{
+font-size: 20px;
+}
+
+.subheading {
+font-size: 18px;
+color: #56636d;
+font-style: italic;
+}
+
+.currentconditions{
+display:inline-block;
+margin: 1rem 0 1rem 5rem;
+padding: 1.2rem;
+color: #1C5D99;
+background-color: #deeaf4;
+border:2px solid, #bfe1fc;
+font-size: 14px;
+
+}
+
+.currentconditions img{
+widows: 100px;
+height: auto;
+}

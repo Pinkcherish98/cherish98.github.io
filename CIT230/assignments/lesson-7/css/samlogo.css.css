@@ -1,0 +1,72 @@
+body {
+    background-color: #ddd;
+}
+
+/* Layout Adjustsments are automatic with flex */
+
+header {
+    max-width: 760px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 30px #777;
+    display: flex;
+    flex-direction: row;
+}
+
+picture {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    flex: 0 1 128px; /* shorthand flex-grow, flex-shrink, and flex-basis (native image size )*/
+}
+picture img {
+    width: 100px;
+    height: auto;
+}
+
+.headings {
+    flex: auto;
+    /* for the children h1, h2 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1,
+h2 {
+    margin: 0.25rem;
+}
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 0.95rem;
+    color: #8888aa;
+    font-style: italic;
+}
+
+.column {
+    flex: auto;
+    border: 1px dashed #000;
+    padding: 0.5rem;
+    background-color: #ccc;
+    margin: .5rem;
+}
+
+.note {
+    font-size: smaller;
+    font-variant: small-caps;
+}
+
+@media (max-width: 37.5em) {
+    picture img {
+        width: 80px;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 0.75rem;
+        color: blue;
+    }
+}
